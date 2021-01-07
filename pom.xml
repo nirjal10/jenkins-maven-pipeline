@@ -36,7 +36,18 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-
+	<distributionManagement>
+		<repository>
+			<id>deploymentRepo</id>
+			<name>Internal Releases</name>
+			<url>http://localhost:36369/repository/maven-releases/</url>
+		</repository>
+		<snapshotRepository>
+			<id>deploymentRepo</id>
+			<name>Internal Releases</name>
+			<url>http://localhost:36369/repository/maven-snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
 	<build>
 		<plugins>
 			<plugin>
